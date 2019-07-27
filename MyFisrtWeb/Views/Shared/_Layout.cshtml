@@ -1,0 +1,40 @@
+﻿<html>
+    <head>
+        <title>Hello the world</title>
+        <link href="~/Content/bootstrap.css" rel="stylesheet" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Content/Site.css" rel="stylesheet" />
+        <script src="~/Scripts/jquery-1.10.2.js"></script>
+        <script src="~/Scripts/bootstrap.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Hoàng Lộc</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dữ liệu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Person/List">Nhân viên</a></li>
+                            <li><a href="#">Đơn vị</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nghiệp vụ</a></li>
+                    <li><a href="#">Thống kê</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <div class="conteiner">
+            @RenderBody();
+        </div>
+    </body>
+</html>
+
